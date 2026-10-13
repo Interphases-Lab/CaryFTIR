@@ -1,0 +1,22 @@
+[project]
+name = "caryftir"
+version = "0.1.0"
+description = "USB driver for the Agilent Cary 630 FTIR spectrometer"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "polars",
+    "pyusb",
+    "scipy",
+]
+
+[project.scripts]
+caryftir = "caryftir.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["caryftir"]

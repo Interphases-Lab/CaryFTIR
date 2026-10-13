@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Measurement data
+*.npz
+*.pcap
+*.pcapng
+
+# OS / editors
+.DS_Store
